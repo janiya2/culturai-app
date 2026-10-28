@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+:root {
+  --background: #040409;
+  --foreground: #f0f2ff;
+  --card-bg: rgba(12, 14, 28, 0.75);
+  --card-border: rgba(99, 102, 241, 0.2);
+  --accent-cyan: #06b6d4;
+  --accent-violet: #8b5cf6;
+  --accent-gold: #f59e0b;
+}
+
+body {
+  background-color: #040409;
+  color: #f0f2ff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(139, 92, 246, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 85% 85%, rgba(6, 182, 212, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.03) 0%, transparent 60%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Custom Glassmorphism */
+.glass-panel {
+  background: rgba(13, 16, 32, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-glow {
+  background: rgba(14, 18, 38, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.12);
+}
+
+.glass-input {
+  background: rgba(8, 10, 22, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f0f2ff;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.glass-input:focus {
+  border-color: rgba(6, 182, 212, 0.7);
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.25);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #040409;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.35);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.65);
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s ease-in-out infinite;
+}
+
+/* CulturAI Luxury Cyber Ambient Animations */
+@keyframes slow-kenburns {
+  0% {
+    transform: scale(1.02) translate(0px, 0px);
+  }
+  50% {
+    transform: scale(1.08) translate(-10px, -8px);
+  }
+  100% {
+    transform: scale(1.02) translate(0px, 0px);
+  }
+}
+
+.animate-kenburns {
+  animation: slow-kenburns 28s ease-in-out infinite alternate;
+}
+
+@keyframes aurora-flow {
+  0%, 100% {
+    opacity: 0.35;
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: translateY(-20px) scale(1.08);
+  }
+}
+
+.animate-aurora {
+  animation: aurora-flow 12s ease-in-out infinite;
+}
+
+.cyber-grid-overlay {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* CulturAI Ultra-Clean Dark Mode Map Tiles (100% Free, No API Key Required) */
+.culturai-dark-tiles {
+  filter: invert(100%) hue-rotate(180deg) brightness(85%) contrast(120%) saturate(60%) !important;
+}
+
+/* Cyber dark canvas background for Leaflet */
+.leaflet-container {
+  background: #040409 !important;
+  font-family: inherit !important;
+}
+
+/* Hide Next.js dev badge so it never obscures mobile UI elements */
+nextjs-portal {
+  display: none !important;
+}
+
+/* Ensure mobile content has full clearance above the cybernetic bottom footer dock */
+@media (max-width: 1023px) {
+  main {
+    padding-bottom: 5.5rem !important;
+  }
+}
+
+
+
