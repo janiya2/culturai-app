@@ -970,7 +970,7 @@ export default function DashboardPage() {
                       </div>
                       <div className="text-[10px] text-cyan-300/90 truncate flex items-center gap-1 font-mono">
                         <span className="text-gray-500">Seed:</span>
-                        <span className="text-cyan-200 font-semibold truncate">&quot;{ent.matched_seed || (idx === 0 ? activeCity : idx === 1 ? (music[0] || "Music") : idx === 2 ? (cinema[0] || "Cinema") : (dining[0] || "Dining"))}&quot;</span>
+                        <span className="text-cyan-200 font-semibold truncate">&quot;{ent.matched_seed || (idx === 0 ? activeCity : idx === 1 ? (taste?.music?.[0] || "Music") : idx === 2 ? (taste?.cinema?.[0] || "Cinema") : (taste?.dining?.[0] || "Dining"))}&quot;</span>
                       </div>
                       <div className="text-[10px] text-gray-500 truncate">ID: {ent.entity_id}</div>
                       {ent.tags && ent.tags.length > 0 && (
