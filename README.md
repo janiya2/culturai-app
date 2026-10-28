@@ -8,6 +8,10 @@
 ![Qloo Taste AI](https://img.shields.io/badge/Qloo_Taste_AI-575M+_Entities-cyan?style=for-the-badge)
 ![Gemini 1.5](https://img.shields.io/badge/Google_Gemini-1.5_Flash-purple?style=for-the-badge)
 ![Firebase](https://img.shields.io/badge/Firebase-Firestore_%26_Auth-orange?style=for-the-badge)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-culturai--app--nu.vercel.app-emerald?style=for-the-badge&logo=vercel)](https://culturai-app-nu.vercel.app)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+🌐 **Live Production Application**: [https://culturai-app-nu.vercel.app](https://culturai-app-nu.vercel.app)
 
 ---
 
